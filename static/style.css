@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  font-family: 'Courier New', monospace;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+main {
+  max-width: 640px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-bottom: 0.5rem;
+  color: #e8ff57;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #f0f0f0;
+  padding: 0.75rem 1rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #e8ff57;
+}
+
+button {
+  background: #e8ff57;
+  color: #0f0f0f;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d4eb3f;
+}
+
+.result {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.result h2 {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.result ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.result ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #222;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.result ul li::before {
+  content: '→ ';
+  color: #e8ff57;
+}
+
+.verdict {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e8ff57;
+}
+
+.hidden {
+  display: none;
+}
